@@ -1,0 +1,250 @@
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3 {
+    line-height: 1.1;
+    
+  }
+
+  /* Navbar items  */
+
+  .navbar-menu {
+    color: var(--desaturated-blue);
+  }
+  /* First hero section */
+  .enter-your-email {
+    width: 25rem !important;
+  }
+  .get-start-btn {
+    padding: 0% 10% !important;
+  }
+  .form-box {
+    width: 100% !important;
+  }
+
+  /* second hero section */
+  .second-hero {
+    margin-top: 10%;
+    background-color: var(--light-grayish-blue);    
+  }
+  .how-it-works {
+    color: var(--moderate-cyan);
+    text-decoration-color: var(--moderate-cyan) !important;
+  }
+  .how-it-works:hover {
+    color: hsl(170, 20%, 43%) !important;
+  }
+  .second-hero > img {
+    position: relative;
+    bottom: 60px;
+    width: 100%;
+  }
+  .bottom-part {
+    background-color: var(--light-grayish-blue);
+    z-index: 0;
+  }
+  .comments {
+    width: 80%;
+  }
+  .profile img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+/* Get early access section */
+  .news-letter {
+    background-color: var(--desaturated-blue);
+    color: white;
+    padding-top: 5%;
+  }
+  .news-letter p {
+    color: var(--light-gray);
+  }
+
+  .texts {
+    width: 40%;
+  }
+  .my-form {
+    width: 50% !important;
+  }
+
+
+
+  /* Footer */
+
+  .footer-main {
+    background-color: var(--very-dark-blue);
+    color: var(--grayish-blue);
+    padding-bottom: 5%;
+    color: var(--light-gray);
+  }
+  .logo {
+    padding-top: 5%;
+    margin-bottom: 3%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(104%) contrast(102%);
+  }
+  .three-boxes{
+    display: flex;
+    width: 100%;
+    gap: 10%;
+  }
+  .first-col {
+    width: 30%;
+  }
+  .icon-paragraph {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 0%;
+  }
+  .icon-paragraph>img {
+    width: 20px;
+    height: 20px;
+    margin-top:1% ;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 10%;
+    text-decoration: none;
+  }
+  li > a:link { 
+    text-decoration: none;
+    color: var(--grayish-blue);
+   }
+  
+  a:visited { text-decoration: none; }
+  
+  a:hover { 
+    text-decoration: none;
+    color: hsl(208, 3%, 55%); 
+  }
+  i {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .social-icons :hover {
+    color: var(--bright-blue);
+  }
+  
+  a:active { text-decoration: none; }
+
+  @media (max-width: 800px) {
+
+    .first-hero {
+      text-align: center;
+    }
+    form {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .get-start-btn {
+      width: 25rem;
+      padding: 1% !important;
+    }
+    .second-hero > img {
+      bottom: 15px !important;
+    }
+    .second-illustration {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .how-it-works {
+      margin-left: 30%;
+    }
+    .comments{
+      margin-left: 10%;
+    }
+    .bottom-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      gap: 0px !important;
+    }
+    .my-form {
+      width: 80% !important;
+      align-items: center;
+    }
+    .my-form > button {
+      width: 100% !important;
+    }
+    .texts {
+      width: 100%;
+      margin: 0 !important;
+      text-align: center;
+    }
+    .three-boxes {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    li {
+      margin-bottom: 0;
+    }
+    .first-col{
+      width: 100%;
+      margin-top: 10px;
+    }
+    .social-icons {
+      text-align: center;
+    }
+
+
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
